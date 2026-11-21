@@ -93,7 +93,7 @@
   document.querySelectorAll('#p-chap a').forEach(function (a) { a.addEventListener('click', function () { closePanels(null); }); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePanels(null); });
   document.addEventListener('click', function (e) { if (!e.target.closest('#filters')) closePanels(null); });
-  var cur = document.getElementById('curchap'), names = ['Install', 'Design', 'Structure', 'Connect', 'First call', 'CRUD', 'Request safety', 'Frontend', 'Accounts', 'Docs and Postman', 'Redis', 'Account safety', 'Web basics', 'Running it', 'API polish', 'Ship'];
+  var cur = document.getElementById('curchap'), names = ['Install', 'Design', 'Structure', 'Connect', 'First call', 'CRUD', 'Request safety', 'Frontend', 'Accounts', 'Docs and Postman', 'Redis', 'Account safety', 'Web basics', 'Running it', 'API polish', 'Email', 'Ship', 'Companies and tags', 'Metrics', 'Webhooks', 'WebSockets', 'File uploads', 'Personal data and privacy', 'Other topics'];
   function whichChapter() {   // the last chapter whose top has scrolled past the header
     var n = 0;
     for (var i = 0; i < names.length; i++) { var el = document.getElementById('step-' + i); if (el && el.getBoundingClientRect().top < 140) n = i; }
