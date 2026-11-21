@@ -312,3 +312,6 @@ body[data-db="sqlite"] .D.nj,body[data-db="mongo"] .D.nj{display:none}
 .err{color:inherit;background:none;border:0}
 
 .cp{color:var(--tk-t)}
+
+/* framework note: only when one framework is picked */
+body[data-fw="all"] .fwnote{display:none}

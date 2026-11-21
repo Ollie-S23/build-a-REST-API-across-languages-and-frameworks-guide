@@ -60,10 +60,12 @@
 A beginner-friendly guide that builds one small API (a contacts list) in five languages, and shows what changes when you pick a different framework or storage option.
 
 * One guide, many choices: Python, Go, JavaScript, TypeScript, PHP and Rust, with their common frameworks, and in-code, JSON-file, SQL and MongoDB storage.
-* Chapters in three parts:
+* Chapters in four parts, plus a separate reference page:
   * **Part 1, steps 0 to 9:** design, folders, database, create/read/update/delete, request safety, a frontend, accounts, and API docs.
   * **Part 2, steps 10 to 16:** Redis, refresh tokens and account locks, CORS and safe headers, logs, caching, audit log, email confirmation and password reset, and shipping.
-  * **Part 3, steps 17 to 21:** companies and tags (more than one table), metrics, webhooks, WebSockets, and other topics not covered.
+  * **Part 3, steps 17 to 20:** companies and tags (more than one table), metrics, webhooks, and WebSockets.
+  * **Part 4, steps 21 to 22:** file uploads (a picture for each contact), and personal data and privacy law (export and erase your data). Contributed by [Redens06](https://github.com/Redens06).
+  * **Chapter 23 (`uncovered_features.html`):** other topics not covered or tested.
 * Each chapter says what was tested and what was not. Not all code is tested, so read the notes before relying on it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -118,9 +120,11 @@ _Documentation links are given next to the code in every chapter._
 ├── index.html          start page
 ├── part1.html          steps 0 to 9
 ├── part2.html          steps 10 to 16
-├── part3.html          steps 17 to 21
+├── part3.html          steps 17 to 20
+├── part4.html          steps 21 to 22
+├── uncovered_features.html   chapter 23: other topics
 ├── assets/
-│   ├── guide.css       styles shared by the three parts
+│   ├── guide.css       styles shared by the guide pages
 │   ├── guide.js        pickers, remembered choices and chapter list
 │   └── index.css       styles for the start page
 ├── images/             README screenshot
@@ -135,9 +139,11 @@ _Documentation links are given next to the code in every chapter._
 - [x] Part 1: build it
 - [x] Part 2: harden it and run it
 - [x] Part 3: more tables, metrics, webhooks, WebSockets
+- [x] Part 4: file uploads, personal data and privacy (started by [Redens06](https://github.com/Redens06) in pull request #1; the code and tests were then completed for every language and framework)
+- [x] Chapter 23: other topics
 - [ ] WebSockets for PHP (needs a long-running PHP server)
 - [ ] Run the MongoDB versions for real
-- [ ] More topics (file uploads, cursor pagination, API versioning, idempotency keys, background jobs and others, listed in the last chapter)
+- [ ] More topics (cursor pagination, API versioning, idempotency keys, background jobs and others, listed in the last chapter)
 
 See the [open issues](https://github.com/Ollie-S23/build-a-REST-API-across-languages-and-frameworks-guide/issues) for proposed changes and known problems.
 
@@ -172,6 +178,7 @@ Project link: [https://github.com/Ollie-S23/build-a-REST-API-across-languages-an
 ## Acknowledgments
 
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for the README structure
+* [Redens06](https://github.com/Redens06) for the first draft of part 4 (steps 21 and 22: file uploads, and personal data and privacy law)
 * [Claude](https://claude.ai) (Anthropic), co-author of the guide's code and text
 * [Choose a License](https://choosealicense.com)
 * [Shields.io](https://shields.io)
